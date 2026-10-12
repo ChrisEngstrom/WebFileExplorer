@@ -1,0 +1,8 @@
+Welcome to the Sample Kitchen
+
+This dataset contains only fictional, demonstration content.
+Browse recipes, search for bacon, and open the nested folders to explore breadcrumbs.
+File sizes are shown in decimal units. A blank file demonstrates the 0 B display.
+The LotsOfFiles folder demonstrates scrolling; the long filename demonstrates wrapping.
+Search matches names, not the words inside these files.
+All source fixtures are safe to share. Treat any files uploaded during use as private until reviewed.

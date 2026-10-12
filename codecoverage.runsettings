@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="Code Coverage">
+        <Configuration>
+          <CodeCoverage>
+            <ModulePaths>
+              <Include>
+                <!-- Include only our own assemblies -->
+                <ModulePath>.*\\WebFileExplorer\.[^\\]*\.dll$</ModulePath>
+              </Include>
+              <Exclude>
+                <!--Exclude the test assemblies themselves -->
+                <ModulePath>.*Tests\.dll</ModulePath>
+              </Exclude>
+            </ModulePaths>
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

@@ -1,0 +1,250 @@
+﻿html {
+    background: #d8dfe7;
+}
+
+body {
+    font: 16px system-ui, sans-serif;
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #192331;
+}
+
+header, form {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-block-start: 0.08em;
+}
+
+main {
+    background: #e8edf2;
+    border: 1px solid #cbd5e1;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+button, input {
+    font: inherit;
+    padding: .4rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type=search] {
+    min-width: 16rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid #dce2e9;
+    padding: .65rem 0;
+}
+
+a {
+    color: #1454a0;
+}
+
+/*#status[role=alert] {
+    color: #a61c1c;
+}*/
+
+#status {
+    margin: .75rem 0;
+    padding: .65rem .8rem;
+    border-left: 3px solid #64748b;
+    border-radius: .25rem;
+    background: #f1f5f9;
+    color: #334155;
+}
+
+    #status:empty {
+        display: none;
+    }
+
+    #status[data-kind="error"] {
+        border-left-color: #b91c1c;
+        background: #fff1f2;
+        color: #991b1b;
+    }
+
+.muted {
+    color: #526272;
+}
+
+.location-bar {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.7rem;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+    .location-bar > span {
+        flex: none;
+        color: #526272;
+        font-size: .875rem;
+    }
+
+#breadcrumbs {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    margin: 0;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+    #breadcrumbs a, #breadcrumbs [aria-current] {
+        min-width: 0;
+        max-width: 12rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #breadcrumbs .separator {
+        flex: none;
+        padding: 0 .25rem;
+    }
+
+#search-form {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.7rem;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+    #search-form[hidden] {
+        display: none;
+    }
+
+#items {
+    height: clamp(10rem, 35vh, 30rem);
+    overflow-y: auto;
+    margin: 0;
+    padding-right: .5rem;
+    scrollbar-gutter: stable;
+    scrollbar-color: #94a3b8 transparent;
+    scrollbar-width: thin;
+}
+
+    #items:focus-visible {
+        outline: 2px solid #1454a0;
+        outline-offset: 2px;
+    }
+
+    #items li:first-child {
+        border-top: 0;
+    }
+
+
+    #items li {
+        align-items: center;
+    }
+
+    #items li > a {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #items li > .muted {
+        flex: none;
+        white-space: nowrap;
+    }
+
+    #items .item-link {
+        min-width: 0;
+        text-decoration: none;
+    }
+
+    #items .item-title {
+        display: flex;
+        align-items: baseline;
+        gap: .35rem;
+    }
+
+    #items .item-icon {
+        flex: none;
+    }
+
+    #items .item-name {
+        min-width: 0;
+        overflow-wrap: anywhere;
+        text-decoration: underline;
+    }
+
+    #items .item-path {
+        display: block;
+        margin-left: 1.75rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #526272;
+        font-size: .875rem;
+    }
+
+.results-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+#summary {
+    margin: 0;
+}
+
+#upload-form {
+    gap: .5rem;
+    margin-left: auto;
+}
+
+    #upload-form[hidden] {
+        display: flex;
+        visibility: hidden;
+    }
+
+    /* Reserve room for "Uploading..." so changing the label does not move the controls. */
+    #upload-form button[type="submit"] {
+        min-inline-size: 8rem;
+    }
+
+#file {
+    width: 14rem;
+    max-width: 100%;
+    margin-top: 0.04em;
+}
+
+
+#clear-file {
+    background: transparent;
+    color: #526272;
+    border: 1px solid #94a3b8;
+}
+
+    #clear-file:hover {
+        background: #d8dfe7;
+    }

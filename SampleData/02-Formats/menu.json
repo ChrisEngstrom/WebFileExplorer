@@ -1,0 +1,17 @@
+{
+  "name": "Sample Kitchen",
+  "items": [
+    {
+      "name": "Bacon breakfast",
+      "price": 8.5
+    },
+    {
+      "name": "Spinach omelette",
+      "price": 7.25
+    },
+    {
+      "name": "Waffles",
+      "price": 6.0
+    }
+  ]
+}

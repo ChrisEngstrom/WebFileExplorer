@@ -1,0 +1,135 @@
+# ASP.NET Core, Visual Studio and VS Code
+# Adapted from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+# and https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+
+# Generated build and publish output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+.artifacts/
+publish/
+
+# IDE caches and user-specific settings
+.vs/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.user
+*.rsuser
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.DotSettings.user
+_ReSharper*/
+
+# Test results and coverage
+[Tt]est[Rr]esults/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.xml
+coverage*.json
+coverage*.info
+coverage-report/
+BenchmarkDotNet.Artifacts/
+
+# Local secrets, data and uploads
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.publishsettings
+*.pubxml
+/src/WebFileExplorer.WebApp/appsettings.Local.json
+/Data/
+/DemoUploads/
+
+# TypeScript build output. Build regenerates these from Scripts/app.ts.
+/src/WebFileExplorer.WebApp/wwwroot/js/app.js
+/src/WebFileExplorer.WebApp/wwwroot/js/app.js.map
+*.tsbuildinfo
+node_modules/
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.log
+
+# Share only explicitly listed fictional fixtures.
+# New uploads anywhere under SampleData remain ignored, including subfolders.
+/SampleData/**
+!/SampleData/01-Recipes/
+!/SampleData/02-Formats/
+!/SampleData/03-LotsOfFiles/
+!/SampleData/05-FileSizes/
+!/SampleData/06-LongNames/
+!/SampleData/07-Uploads/
+!/SampleData/01-Recipes/Brunch/
+!/SampleData/01-Recipes/Brunch/Weekend/
+!/SampleData/01-Recipes/Brunch/Weekend/Family/
+!/SampleData/01-Recipes/Brunch/Weekend/Family/Shopping/
+!/SampleData/00-Welcome.txt
+!/SampleData/01-Recipes/Brunch/Café-menu.txt
+!/SampleData/01-Recipes/Brunch/Weekend/Family/Shopping/bacon-shopping-list.txt
+!/SampleData/01-Recipes/Brunch/bacon-and-eggs.md
+!/SampleData/01-Recipes/bacon-breakfast.txt
+!/SampleData/01-Recipes/notes & extras (demo).txt
+!/SampleData/01-Recipes/waffles.txt
+!/SampleData/02-Formats/empty-file.txt
+!/SampleData/02-Formats/ingredients.csv
+!/SampleData/02-Formats/kitchen-sign.svg
+!/SampleData/02-Formats/menu.json
+!/SampleData/03-LotsOfFiles/note-01.txt
+!/SampleData/03-LotsOfFiles/note-02.txt
+!/SampleData/03-LotsOfFiles/note-03.txt
+!/SampleData/03-LotsOfFiles/note-04.txt
+!/SampleData/03-LotsOfFiles/note-05.txt
+!/SampleData/03-LotsOfFiles/note-06.txt
+!/SampleData/03-LotsOfFiles/note-07.txt
+!/SampleData/03-LotsOfFiles/note-08.txt
+!/SampleData/03-LotsOfFiles/note-09.txt
+!/SampleData/03-LotsOfFiles/note-10.txt
+!/SampleData/03-LotsOfFiles/note-11.txt
+!/SampleData/03-LotsOfFiles/note-12.txt
+!/SampleData/03-LotsOfFiles/note-13.txt
+!/SampleData/03-LotsOfFiles/note-14.txt
+!/SampleData/03-LotsOfFiles/note-15.txt
+!/SampleData/03-LotsOfFiles/note-16.txt
+!/SampleData/03-LotsOfFiles/note-17.txt
+!/SampleData/03-LotsOfFiles/note-18.txt
+!/SampleData/03-LotsOfFiles/note-19.txt
+!/SampleData/03-LotsOfFiles/note-20.txt
+!/SampleData/03-LotsOfFiles/note-21.txt
+!/SampleData/03-LotsOfFiles/note-22.txt
+!/SampleData/03-LotsOfFiles/note-23.txt
+!/SampleData/03-LotsOfFiles/note-24.txt
+!/SampleData/03-LotsOfFiles/note-25.txt
+!/SampleData/03-LotsOfFiles/note-26.txt
+!/SampleData/03-LotsOfFiles/note-27.txt
+!/SampleData/03-LotsOfFiles/note-28.txt
+!/SampleData/03-LotsOfFiles/note-29.txt
+!/SampleData/03-LotsOfFiles/note-30.txt
+!/SampleData/03-LotsOfFiles/note-31.txt
+!/SampleData/03-LotsOfFiles/note-32.txt
+!/SampleData/03-LotsOfFiles/note-33.txt
+!/SampleData/03-LotsOfFiles/note-34.txt
+!/SampleData/03-LotsOfFiles/note-35.txt
+!/SampleData/03-LotsOfFiles/note-36.txt
+!/SampleData/03-LotsOfFiles/note-37.txt
+!/SampleData/03-LotsOfFiles/note-38.txt
+!/SampleData/03-LotsOfFiles/note-39.txt
+!/SampleData/03-LotsOfFiles/note-40.txt
+!/SampleData/05-FileSizes/bacon-anthology-1MB.txt
+!/SampleData/05-FileSizes/bacon-notebook-250KB.txt
+!/SampleData/05-FileSizes/tiny-note.txt
+!/SampleData/06-LongNames/a-friendly-weekend-brunch-recipe-with-crispy-bacon-golden-hash-browns-fresh-spinach-and-toasted-sourdough-for-demonstrating-long-filename-wrapping-in-the-file-browser.txt
+!/SampleData/07-Uploads/README.txt

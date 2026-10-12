@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "target": "ES2020",
+    "rootDir": "./Scripts",
+    "outDir": "./wwwroot/js"
+  },
+  "include": [ "Scripts/**/*.ts" ],
+  "exclude": [ "wwwroot", "node_modules" ]
+}

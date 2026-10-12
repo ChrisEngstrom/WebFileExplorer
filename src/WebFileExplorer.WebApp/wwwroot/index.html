@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web File Explorer</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <script src="/js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Web File Explorer</h1>
+    </header>
+    <main>
+        <div class="location-bar">
+            <span>Location</span>
+            <nav id="breadcrumbs" aria-label="Folder path"></nav>
+        </div>
+
+        <form id="search-form">
+            <label for="search">Search Files &amp; Folders</label>
+            <input id="search" type="search" placeholder="Search below this folder">
+            <button>Search</button>
+            <button type="button" id="clear">Clear</button>
+        </form>
+
+        <p id="status" role="status"></p>
+
+        <ul id="items" aria-label="Files and folders" tabindex="0"></ul>
+
+        <div class="results-footer">
+            <p id="summary" aria-live="polite">Loading...</p>
+            <form id="upload-form">
+                <input id="file" type="file" required aria-label="File to upload">
+                <button type="button" id="clear-file" hidden>Remove</button>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
